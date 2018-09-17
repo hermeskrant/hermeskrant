@@ -25,4 +25,4 @@ collections:
         name: "body"
         widget: "markdown"
     editor:
-      preview: false
+      preview: true
