@@ -1,0 +1,49 @@
+{{define "html"}}
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>{{.Name}} | {{.Layout.Name}}</title>
+
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css" integrity="sha256-ncjDAd2/rm/vaNTqp7Kk96MfSeHACtbiDU9NWKqNuCI=" crossorigin="anonymous" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js" integrity="sha256-0gIvTkdsp0OOeV8tx3UTdi3ehppGwZbzQMvZJYhbzsE=" crossorigin="anonymous"></script>
+        </head>
+        <body>
+            <div class="ui huge secondary pointing menu">
+                <div class="ui container">
+                    <a class="item">Home</a>
+                    <a class="active item">Artikelen</a>
+                </div>
+            </div>
+
+            {{template "page"}}
+        </body>
+        <style>
+            body {
+                font-family: 'Open Sans', sans-serif !important;
+            }
+
+            @media screen and (max-width: 768px) {
+                .not_mobile {
+                    display: none;
+                }
+            }
+
+            .eight .ui.fluid.card {
+                height: 100%;
+            }
+
+            .twelve .card .header {
+                font-size: 19pt !important;
+            }
+
+            .twelve .card .description .segment {
+                text-align: justify;
+            }
+        </style>
+    </html>
+{{end}}

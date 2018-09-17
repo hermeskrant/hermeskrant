@@ -1,0 +1,29 @@
+{
+	"templateroot": "templates/",
+	"jsonroot": "_data/",
+    "outroot": "public/",
+	
+    "Sites": [
+        {
+            "Slug": "/index.html",
+            "Templates": [
+                "Layout.html",
+                "Home.html"
+            ],
+            "JSONfiles": [
+                "Layout.json",
+                "Home.json"
+            ]
+        },{
+            "Slug": "/article.html",
+            "Templates": [
+                "Layout.html",
+                "Article.html"
+            ],
+            "JSONfiles": [
+                "Layout.json",
+                "Article.json"
+            ]
+        }
+    ]
+}
