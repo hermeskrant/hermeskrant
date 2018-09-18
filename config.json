@@ -14,7 +14,8 @@
                 "Layout.json",
                 "Home.json"
             ]
-        },{
+		},
+		{
             "Slug": "articles/*.html",
             "Templates": [
                 "Layout.html",
