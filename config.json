@@ -2,6 +2,7 @@
 	"templateroot": "templates/",
 	"jsonroot": "_data/",
     "outroot": "public/",
+    "staticroot": "static/",
 	
     "Sites": [
         {
@@ -12,11 +13,12 @@
             ],
             "JSONfiles": [
                 "Layout.json",
-                "Home.json"
+                "Home.json",
+                "articles.json"
             ]
 		},
 		{
-            "Slug": "articles/*.html",
+            "Slug": "article/*.html",
             "Templates": [
                 "Layout.html",
                 "Article.html"

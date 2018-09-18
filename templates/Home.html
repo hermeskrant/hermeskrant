@@ -1,70 +1,24 @@
 {{define "page"}}
     <div class="ui container">
         <div class="ui stackable two column grid">
-            <div class="eight wide column">
-                <div class="ui fluid card">
-                    <div class="image">
-                        <img src="https://i2.wp.com/beebom.com/wp-content/uploads/2016/01/Reverse-Image-Search-Engines-Apps-And-Its-Uses-2016.jpg?resize=640%2C426">
-                    </div>
-                    <div class="content">
-                        <a class="header">The state of affairs: Cats</a>
-                        <div class="meta">
-                            <span class="date">Gepubliceerd op Maandag, 5 April 2018</span>
-                        </div>
-                        <div class="description">
-                            Kristy leeft al jaaren New York. Nu moet zij weg. Wij leggen de nieuwe anti-kat wet in New York uit. <a class="not_mobile" href="readmore">Lees meer...</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="eight wide column">
-                <div class="ui fluid card">
-                    <div class="image">
-                        <img src="https://nos.nl/data/image/2018/09/10/498971/xxl.jpg">
-                    </div>
-                    <div class="content">
-                        <a class="header">VVD-fractieleider Dijkhoff valt RK-Kerk aan en schrijft zich uit</a>
-                        <div class="meta">
-                            <span class="date">Gepubliceerd op Maandag, 5 April 2018</span>
-                        </div>
-                        <div class="description">
-                                VVD-fractievoorzitter Dijkhoff schrijft in een felle open brief aan kardinaal Eijk dat hij de Rooms-Katholieke Kerk gaat verlaten. "Ik kies voor de liefde en de mensen in plaats van de beperkingen en de kerk." <a class="not_mobile" href="readmore"> Lees meer...</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="eight wide column card">
-                <div class="ui fluid card">
-                    <div class="image">
-                        <img src="https://www.powned.tv/media/129885/hello-kitty-gun-45.jpg?anchor=center&mode=crop&quality=80&width=1024&height=576&rnd=131816666280000000">
-                    </div>
-                    <div class="content">
-                        <a class="header">Schoolschutter Roermond twee weken langer vast.</a>
-                        <div class="meta">
-                            <span class="date">Gepubliceerd op Maandag, 5 April 2018</span>
-                        </div>
-                        <div class="description">
-                                De 16-jarige jongen uit Koningsbosch die afgelopen vrijdag enkele schoten loste op een school voor speciaal onderwijs (naar verluidt had hij ruzie met een medescholier) moet van de rechter-commissaris in Roermond in ieder geval nog twee weken langer in hechtenis blijven zitten.<a class="not_mobile" href="readmore"> Lees meer...</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="eight wide column">
-                <div class="ui fluid card">
+            {{range .Articles}}
+                <div class="eight wide column">
+                    <div class="ui fluid card" onclick="window.open('/article/{{.Path}}', '_self')">
                         <div class="image">
-                            <img src="https://nos.nl/data/image/2018/09/17/500566/xxl.jpg">
+                            <img src="{{.Thumbnail}}">
                         </div>
                         <div class="content">
-                        <a class="header">Geen etentje of koffie: ook onder volwassenen is pesten een probleem</a>
-                        <div class="meta">
-                            <span class="date">Gepubliceerd op Maandag, 5 April 2018</span>
-                        </div>
-                        <div class="description">
-                                De pestproblematiek bij middelbare scholieren mag dan afnemen, de problemen bij volwassenen zijn nog lang niet opgelost. Het aantal gepeste volwassenen neemt niet af, maar is al jaren stabiel, zeggen deskundigen. Zij vinden dat er dan ook meer aandacht moet komen voor gepeste volwassenen, want dat zijn er meer dan velen denken. <a class="not_mobile" href="readmore">Lees meer...</a>
+                            <a class="header" href="/article/{{.Path}}">{{.Title}}</a>
+                            <div class="meta">
+                                <span class="date">Gepubliceerd op Maandag, 5 April 2018</span>
+                            </div>
+                            <div class="description">
+                                {{.QuickText}} <a class="not_mobile" href="/article/{{.Path}}">Lees meer...</a>
+                            </div>
                         </div>
                     </div>
-                </div>        
-            </div>
+                </div>
+            {{end}}
         </div>
     </div>
 {{end}}

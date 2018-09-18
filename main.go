@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"path/filepath"
+	"strings"
 )
 
 func main() {
@@ -14,6 +15,7 @@ func main() {
 	}
 
 	var files = make([]interface{}, len(infos))
+	var final = make(map[string]interface{}, 1)
 
 	for i, info := range infos {
 		file, err := ioutil.ReadFile(filepath.Join("_data/articles", info.Name()))
@@ -26,10 +28,12 @@ func main() {
 			fmt.Println(err.Error())
 		}
 
-		files[i].(map[string]interface{})["path"] = info.Name()
+		files[i].(map[string]interface{})["Path"] = strings.Replace(info.Name(), ".json", "", -1)
 	}
 
-	output, err := json.Marshal(files)
+	final["Articles"] = files
+
+	output, err := json.Marshal(final)
 	if err != nil {
 		fmt.Println(err.Error())
 	}
