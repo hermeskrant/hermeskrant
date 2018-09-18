@@ -3,17 +3,17 @@
         <div class="ui stackable two column grid">
             {{range .Articles}}
                 <div class="eight wide column">
-                    <div class="ui fluid card" onclick="window.open('/article/{{.Path}}', '_self')">
+                    <div class="ui fluid card" onclick="window.open('/article/{{.path}}', '_self')">
                         <div class="image">
-                            <img src="{{.Thumbnail}}">
+                            <img src="{{.thumbnail}}">
                         </div>
                         <div class="content">
-                            <a class="header" href="/article/{{.Path}}">{{.Title}}</a>
+                            <a class="header" href="/article/{{.path}}">{{.title}}</a>
                             <div class="meta">
                                 <span class="date">Gepubliceerd op Maandag, 5 April 2018</span>
                             </div>
                             <div class="description">
-                                {{.QuickText}} <a class="not_mobile" href="/article/{{.Path}}">Lees meer...</a>
+                                {{.quicktext}} <a class="not_mobile" href="/article/{{.path}}">Lees meer...</a>
                             </div>
                         </div>
                     </div>
