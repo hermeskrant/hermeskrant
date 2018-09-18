@@ -1,8 +1,8 @@
 {{define "page"}}
     <div class="ui container">
         <br>
-        <span style="font-weight: 900; font-size: 35pt; line-height: 35pt;">{{.title}}</span>
-        <h2>{{.quicktext}}</h2>
+        <span style="font-weight: 900; font-size: 35pt; line-height: 35pt;">{{.Title}}</span>
+        <h2>{{.QuickText}}</h2>
         <br>
         <span class="date">Gepubliceerd op Maandag, 5 April 2018</span>
         <br><br>
@@ -10,10 +10,10 @@
             <div class="twelve wide column">
                 <div class="ui fluid card">
                     <div class="image">
-                        <img src="{{.thumbnail}}">
+                        <img src="{{.Thumbnail}}">
                     </div>
                     <div class="content">
-                        {{mdprocess .body}}
+                        {{mdprocess .Body}}
                     </div>
                 </div>
             </div>
