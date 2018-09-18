@@ -36,8 +36,18 @@ collections:
         name: "thumbnail"
         widget: "image"
         required: false
+      - label: "Featured Text"
+        name: "Featured Text"
+        widget: "text"
+      - label: "Topic"
+        name: "topic"
+        widget: "select"
+        options:
+        - { label: "Politics", value: "politics" }
+        - { label: "Lifestyle", value: "lifestyle" }
+        - { label: "Technology", value: "technology" }
       - label: "Body"
         name: "body"
         widget: "markdown"
     editor:
-      preview: true
+      preview: false
