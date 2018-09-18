@@ -43,9 +43,9 @@ collections:
         name: "Topic"
         widget: "select"
         options:
-        - { label: "Politics", value: "politics" }
-        - { label: "Lifestyle", value: "lifestyle" }
-        - { label: "Technology", value: "technology" }
+          - { label: "Politics", value: "politics" }
+          - { label: "Lifestyle", value: "lifestyle" }
+          - { label: "Technology", value: "technology" }
       - label: "Body"
         name: "Body"
         widget: "markdown"
