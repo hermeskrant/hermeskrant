@@ -1,4 +1,4 @@
-binary = templatebuilder
+binary = antibuild
 templateargs = --config config.json
 templaterefresh = $(templateargs) --development --host
 
