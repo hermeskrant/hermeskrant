@@ -30,24 +30,24 @@ collections:
     format: "json"
     fields: # The fields for each document, usually in front matter
       - label: "Title"
-        name: "Title"
+        name: "title"
         widget: "string"
       - label: "Featured Image"
-        name: "Thumbnail"
+        name: "thumbnail"
         widget: "image"
         required: false
       - label: "Featured Text"
-        name: "QuickText"
+        name: "quicktext"
         widget: "text"
       - label: "Topic"
-        name: "Topic"
+        name: "topic"
         widget: "select"
         options:
           - { label: "Politics", value: "politics" }
           - { label: "Lifestyle", value: "lifestyle" }
           - { label: "Technology", value: "technology" }
       - label: "Body"
-        name: "Body"
+        name: "body"
         widget: "markdown"
     editor:
       preview: false
