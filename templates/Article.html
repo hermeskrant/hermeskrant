@@ -1,8 +1,8 @@
 {{define "page"}}
     <div class="ui container">
         <br>
-        <span style="font-weight: 900; font-size: 35pt; line-height: 35pt;">Geen etentje of koffie: ook onder volwassenen is pesten een probleem</span>
-        <h2>De pestproblematiek bij middelbare scholieren mag dan afnemen, de problemen bij volwassenen zijn nog lang niet opgelost. </h2>
+        <span style="font-weight: 900; font-size: 35pt; line-height: 35pt;">{{.title}}</span>
+        <h2>{{.quicktext}}</h2>
         <br>
         <span class="date">Gepubliceerd op Maandag, 5 April 2018</span>
         <br><br>
@@ -10,40 +10,10 @@
             <div class="twelve wide column">
                 <div class="ui fluid card">
                     <div class="image">
-                        <img src="https://nos.nl/data/image/2018/09/17/500566/xxl.jpg">
+                        <img src="{{,thumbnail}}">
                     </div>
                     <div class="content">
-                        <b>Het aantal gepeste volwassenen neemt niet af, maar is al jaren stabiel, zeggen deskundigen. Zij vinden dat er dan ook meer aandacht moet komen voor gepeste volwassenen, want dat zijn er meer dan velen denken.</b>
-                        <br><br>
-                        "Het gaat bij volwassenen meestal om buitensluiting. Iemand mag niet mee uit eten, er wordt geen koffie voor degene gehaald. Dat soort zaken", legt pestdeskundige Theo Klungers uit. "Er is ook werkgerelateerd pesten. Een collega die geen belangrijke informatie aan je doorgeeft, waardoor jij weer in de problemen komt."
-                        <br><br>
-                        Uit onderzoek van TNO uit 2016 blijkt dat zo'n 15 procent van de werkende Nederlanders te maken heeft met pestgedrag. Ruim 1,2 miljoen mensen dus. Uit berekeningen van het onderzoeksinstituut bleek destijds dat pesten leidt tot zeven extra verzuimdagen per slachtoffer per jaar en dat levert jaarlijks een schadepost van 1,7 miljard euro op voor werkgevers.
-                        <br><br>
-                        <b>Risico's</b>
-                        <br><br>
-                        Er zijn een paar risicofactoren voor pesten te noemen, zegt Alie Kuiper, organisatiedeskundige bij Bezemer Kuiper & Schubad uit Rotterdam. Zij wordt ingeschakeld als er signalen zijn dat er op het werk klachten of signalen zijn van pesten.
-                        <br><br>
-                        "Werk buiten kantoortijden brengt een hoger risico met zich mee. Na 17.00 uur ontstaat er een andere cultuur, omdat de leidinggevende weg is. Bij nacht- of wachtdiensten is dat nog een tandje erger. Of bij een wachtcultuur, bijvoorbeeld bij politie of brandweer, worden dan uit verveling 'geintjes' uitgehaald."
-                        <br><br>
-                        Reorganisaties zijn ook vaak een voedingsbodem voor pestgedrag op het werk. Kuiper: "Als een organisatie een reorganisatie aankondigt, maar het dan vervolgens lang stil blijft, dan kan er een sfeer ontstaan waarin een team zélf bepaalt wie er moet vertrekken. Dan neemt de dominante groep 'maatregelen' tegen collega's die afwijken van het gemiddelde. En worden diegenen die onder- of overpresteren weggepest."
-                        <br><br>
-                        Ook binnen bedrijven die veel werken met flexibele arbeidskrachten is er een gevaar. "Die mensen zijn kwetsbaar voor pestgedrag", zegt ze. "Ze durven niet zo snel aan de bel te trekken."
-                        <br><br>
-                        Dat er 1,2 miljoen mensen worden gepest, is volgens Kuiper reden tot zorg. "Medewerkers lopen het risico op uitval, op ziekte en op stress. Zeker als er geen beschermende factoren zijn, zoals sociale steun van collega's. En de gevolgen daarvan kunnen zich later nog manifesteren."
-                        <br><br>
-                        Een oplossing voor pestgedrag op het werk is niet zo 1-2-3 te geven. "De wetgeving verplicht werkgevers om er iets tegen te doen", vertelt Klungers. "En je kunt naar de vertrouwenspersoon stappen, die vaak een papieren tijger is. Uit de praktijk blijkt dat je in die fase van het pesten weinig tot niets kunt doen. En dan raken mensen helemaal uitgeput. En ze gaan maar door, uit hun rechtvaardigheidsgevoel."
-                        <br><br>
-                        Kuiper denkt dat leidinggevenden meer mogelijkheden moeten krijgen om het pestgedrag aan te pakken. "Meer aanwezig zijn bijvoorbeeld. En de vaardigheden of middelen krijgen om pestgedrag aan te pakken."
-                        <br><br>
-                        Dat is overigens niet zomaar geregeld, weet ze ook. "Bij veel organisaties krijgt een leidinggevende targets opgelegd die alleen gaan over wat er wordt opgeleverd. Dat hoor ik ook uit de praktijk: leidinggevenden hebben helemaal geen tijd om het probleem aan te pakken. Terwijl er geen klachten hoeven te ontstaan, áls je dit vroeg aanpakt."
-                        <br><br>
-                        <b>Nieuwe baan</b>
-                        <br><br>
-                        Wie toch wordt gepest, kan in deze tijd volgens Klungers het beste op zoek naar een andere baan. "In deze tijd zijn die er wel. Pesten heeft iets te maken met de cultuur van het bedrijf. In veel bedrijven wordt niet of nauwelijks gepest. Natuurlijk, een plagerijtje moet kunnen. Maar als iemand dat niet leuk vindt, stop dan meteen."
-                        <br><br>
-                        Pesten gebeurt onder volwassenen ook door niet-collega's. Bijvoorbeeld klanten van winkels die slechte reviews op Google achterlaten. "Of die iemand in een winkel onbeschoft behandelen, elke keer terugkeren en het dan weer doen", zegt Klungers.
-                        <br><br>
-                        Het is de vraag of de afname van het pestgedrag op scholen een kans voor volwassenen biedt, zegt Klungers. "Maar ik hoop het. Heel veel mensen geloven nu niet eens dat er ook gepest wordt in bedrijven, scholen, instellingen, en ga maar door."        
+                        {{.body}}
                     </div>
                 </div>
             </div>

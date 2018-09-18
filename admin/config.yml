@@ -37,7 +37,7 @@ collections:
         widget: "image"
         required: false
       - label: "Featured Text"
-        name: "Featured Text"
+        name: "quicktext"
         widget: "text"
       - label: "Topic"
         name: "topic"

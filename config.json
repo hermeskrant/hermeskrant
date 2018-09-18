@@ -15,14 +15,15 @@
                 "Home.json"
             ]
         },{
-            "Slug": "/article.html",
+            "Slug": "articles/*.html",
             "Templates": [
                 "Layout.html",
                 "Article.html"
             ],
             "JSONfiles": [
                 "Layout.json",
-                "Article.json"
+                "Article.json",
+                "articles/*.json"
             ]
         }
     ]
