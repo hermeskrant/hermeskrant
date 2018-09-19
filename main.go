@@ -28,7 +28,7 @@ func main() {
 			fmt.Println(err.Error())
 		}
 
-		files[i].(map[string]interface{})["Path"] = strings.Replace(info.Name(), ".json", "", -1)
+		files[i].(map[string]interface{})["path"] = strings.Replace(info.Name(), ".json", "", -1)
 
 		outputJSON, err := json.Marshal(files[i])
 		if err != nil {
