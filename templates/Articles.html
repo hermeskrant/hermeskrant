@@ -1,2 +1,25 @@
 {{define "page"}}
+    {{$Topics := .Layout.Topics}}
+    <div class="ui container">
+            <table class="ui celled unstackable striped table">
+                <thead>
+                    <tr>
+                        <th colspan="2">
+                        Artikelen
+                        </th>
+                    </tr>
+                </thead>
+            <tbody>
+                {{range .Articles}}
+                    <tr>
+                        <td class="collapsing">
+                            <img class="ui tiny image" src="{{.thumbnail}}">
+                            <br><a class="ui {{(index $Topics .topic).color}} label"><i class="{{(index $Topics .topic).icon}} icon"></i>&nbsp;{{(index $Topics .topic).name}}</a>
+                        </td>
+                        <td><a class="ui medium header" href="/articles/{{.path}}">{{.title}}</a></td>
+                    </tr>
+                {{end}}
+            </tbody>
+        </table>
+    </div>
 {{end}}
