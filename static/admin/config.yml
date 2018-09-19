@@ -46,6 +46,10 @@ collections:
           - { label: "Politics", value: "politics" }
           - { label: "Lifestyle", value: "lifestyle" }
           - { label: "Technology", value: "technology" }
+      - label: "Enable comments?"
+        name: "comments"
+        widget: "boolean"
+        default: true
       - label: "Body"
         name: "body"
         widget: "markdown"

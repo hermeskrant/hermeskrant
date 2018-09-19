@@ -6,7 +6,7 @@
                 <div class="eight wide column">
                     <div class="ui fluid card" onclick="window.open('/article/{{.path}}', '_self')">
                         <div class="image">
-                            <a class="ui {{(index $Topics .topic).color}} big right ribbon label">{{(index $Topics .topic).name}}</a>
+                            <a class="ui {{(index $Topics .topic).color}} big right ribbon label"><i class="{{(index $Topics .topic).icon}} icon"></i> {{(index $Topics .topic).name}}</a>
                             <img src="{{.thumbnail}}">
                         </div>
                         <div class="content">

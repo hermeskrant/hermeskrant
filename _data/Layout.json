@@ -4,15 +4,18 @@
         "Topics": {
             "politics": {
                 "name": "Politiek",
-                "color": "blue"
+                "color": "blue",
+                "icon": "balance scale"
             },
             "lifestyle": {
                 "name": "Lifestyle",
-                "color": "purple"
+                "color": "purple",
+                "icon": "hand peace"
             },
             "technology": {
                 "name": "Technologie",
-                "color": "green"
+                "color": "green",
+                "icon": "space shuttle"
             }
         }
     }

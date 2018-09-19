@@ -9,6 +9,7 @@ install:
 
 build: 
 	make clean
+	./articlecompiler
 	$(binary) $(templateargs)
 
 refresh:

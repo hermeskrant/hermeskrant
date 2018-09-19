@@ -19,6 +19,7 @@
                         {{mdprocess .body}}
                     </div>
                 </div>
+            {{if .comments}}
                 <div id="disqus_thread"></div>
                 <script>
 
@@ -35,11 +36,11 @@
                 })();
                 </script>
                 <noscript>Please enable JavaScript to view the comments section.</a></noscript>
+            {{end}}
             </div>
             <div class="four wide column">
                 <h4 class="ui horizontal divider header">
-                    <i class="balance scale icon"></i>
-                    <span style="text-transform: uppercase;">MEER OVER {{(index $Topics .topic).name}}</span>
+                    <i class="{{(index $Topics .topic).icon}} icon"></i>&nbsp;&nbsp;<span style="text-transform: uppercase;">MEER OVER {{(index $Topics .topic).name}}</span>
                 </h4>
                 {{$Counter := 0}}
                 {{range .Articles}}
