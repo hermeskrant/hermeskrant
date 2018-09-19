@@ -1,5 +1,19 @@
 {
     "Layout": {
-        "Name": "HermesKrant"
+        "Name": "HermesKrant",
+        "Topics": {
+            "politics": {
+                "name": "Politiek",
+                "color": "blue"
+            },
+            "lifestyle": {
+                "name": "Lifestyle",
+                "color": "purple"
+            },
+            "technology": {
+                "name": "Technologie",
+                "color": "green"
+            }
+        }
     }
 }

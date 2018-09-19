@@ -26,6 +26,7 @@
             "JSONfiles": [
                 "Layout.json",
                 "Article.json",
+                "articles.json",
                 "articles/*.json"
             ]
         }

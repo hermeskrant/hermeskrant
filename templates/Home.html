@@ -1,10 +1,12 @@
 {{define "page"}}
+    {{$Topics := .Layout.Topics}}
     <div class="ui container">
         <div class="ui stackable two column grid">
             {{range .Articles}}
                 <div class="eight wide column">
                     <div class="ui fluid card" onclick="window.open('/article/{{.path}}', '_self')">
                         <div class="image">
+                            <a class="ui {{(index $Topics .topic).color}} big right ribbon label">{{(index $Topics .topic).name}}</a>
                             <img src="{{.thumbnail}}">
                         </div>
                         <div class="content">
