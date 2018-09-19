@@ -25,7 +25,7 @@
             ],
             "JSONfiles": [
                 "Layout.json",
-                "Article.json",
+                "Articles.json",
                 "articles.json"
             ]
         },

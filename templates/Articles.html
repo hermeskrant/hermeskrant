@@ -1,17 +1,22 @@
 {{define "page"}}
     {{$Topics := .Layout.Topics}}
-    <div class="ui container">
-            <table class="ui celled unstackable striped table">
-                <thead>
-                    <tr>
-                        <th colspan="2">
+    <div class="ui container">                
+        <table class="ui celled unstackable striped table">
+            <thead>
+                <tr>
+                    <th colspan="2">
                         Artikelen
-                        </th>
-                    </tr>
-                </thead>
+                        <br><br>
+                        <div class="ui icon fluid input">
+                            <i class="search icon"></i>
+                            <input type="text" placeholder="Search..." id="search" onchange="search()">
+                        </div>
+                    </th>
+                </tr>
+            </thead>
             <tbody>
                 {{range .Articles}}
-                    <tr>
+                    <tr id="{{.path}}">
                         <td class="collapsing">
                             <img class="ui tiny image" src="{{.thumbnail}}">
                             <br><a class="ui {{(index $Topics .topic).color}} label"><i class="{{(index $Topics .topic).icon}} icon"></i>&nbsp;{{(index $Topics .topic).name}}</a>
@@ -22,4 +27,30 @@
             </tbody>
         </table>
     </div>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script>
+        var articles = [
+            {{range .Articles}}
+                {
+                    "topic": "{{(index $Topics .topic).name}}",
+                    "title": "{{.title}}",
+                    "path": "{{.path}}"
+                },  
+            {{end}}
+        ]
+
+        var idx = lunr(function () {
+            this.ref('path')
+            this.field('topic')
+            this.field('title')
+
+            articles.forEach(function (doc) {
+                this.add(doc)
+            }, this)
+        })
+
+        function search() {
+            console.log(idx.search($("#search").val()))
+        }
+    </script> 
 {{end}}
