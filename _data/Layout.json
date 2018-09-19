@@ -4,7 +4,7 @@
         "Topics": {
             "politics": {
                 "name": "Politiek",
-                "color": "blue",
+                "color": "orange",
                 "icon": "balance scale"
             },
             "lifestyle": {
@@ -14,8 +14,23 @@
             },
             "technology": {
                 "name": "Technologie",
-                "color": "green",
-                "icon": "space shuttle"
+                "color": "teal",
+                "icon": "mobile alternate"
+            },
+            "space": {
+                "name": "Ruimte",
+                "color": "blue",
+                "icon": "mobile alternate"
+            },
+            "art": {
+                "name": "Kunst",
+                "color": "pink",
+                "icon": "paint brush"
+            },
+            "entertainment": {
+                "name": "Spellen, Films en Boeken",
+                "color": "red",
+                "icon": "play"
             }
         }
     }

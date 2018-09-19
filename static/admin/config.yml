@@ -46,6 +46,9 @@ collections:
           - { label: "Politics", value: "politics" }
           - { label: "Lifestyle", value: "lifestyle" }
           - { label: "Technology", value: "technology" }
+          - { label: "Space", value: "space" }
+          - { label: "Art", value: "art" }
+          - { label: "Entertainment", value: "entertainment" }
       - label: "Enable comments?"
         name: "comments"
         widget: "boolean"
