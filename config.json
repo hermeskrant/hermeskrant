@@ -18,6 +18,18 @@
             ]
 		},
 		{
+            "Slug": "article/index.html",
+            "Templates": [
+                "Layout.html",
+                "Articles.html"
+            ],
+            "JSONfiles": [
+                "Layout.json",
+                "Article.json",
+                "articles.json"
+            ]
+        },
+		{
             "Slug": "article/*.html",
             "Templates": [
                 "Layout.html",
