@@ -18,7 +18,7 @@
             ]
 		},
 		{
-            "Slug": "article/index.html",
+            "Slug": "articles/index.html",
             "Templates": [
                 "Layout.html",
                 "Articles.html"
@@ -30,7 +30,7 @@
             ]
         },
 		{
-            "Slug": "article/*.html",
+            "Slug": "articles/*.html",
             "Templates": [
                 "Layout.html",
                 "Article.html"

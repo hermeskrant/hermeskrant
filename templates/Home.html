@@ -4,18 +4,18 @@
         <div class="ui stackable two column grid">
             {{range .Articles}}
                 <div class="eight wide column">
-                    <div class="ui fluid card" onclick="window.open('/article/{{.path}}', '_self')">
+                    <div class="ui fluid card" onclick="window.open('/articles/{{.path}}', '_self')">
                         <div class="image">
                             <a class="ui {{(index $Topics .topic).color}} big right ribbon label"><i class="{{(index $Topics .topic).icon}} icon"></i> {{(index $Topics .topic).name}}</a>
                             <img src="{{.thumbnail}}">
                         </div>
                         <div class="content">
-                            <a class="header" href="/article/{{.path}}">{{.title}}</a>
+                            <a class="header" href="/articles/{{.path}}">{{.title}}</a>
                             <div class="meta">
                                 <span class="date">Gepubliceerd op Maandag, 5 April 2018</span>
                             </div>
                             <div class="description">
-                                {{.quicktext}} <a class="not_mobile" href="/article/{{.path}}">Lees meer...</a>
+                                {{.quicktext}} <a class="not_mobile" href="/articles/{{.path}}">Lees meer...</a>
                             </div>
                         </div>
                     </div>
