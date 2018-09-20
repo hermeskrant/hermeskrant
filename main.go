@@ -6,7 +6,23 @@ import (
 	"io/ioutil"
 	"path/filepath"
 	"strings"
+	"time"
 )
+
+var months = []string{
+	"januari",
+	"februari",
+	"maart",
+	"april",
+	"mei",
+	"juni",
+	"juli",
+	"augustus",
+	"september",
+	"oktober",
+	"november",
+	"december",
+}
 
 func main() {
 	infos, err := ioutil.ReadDir("_data/articles")
@@ -29,6 +45,11 @@ func main() {
 		}
 
 		files[i].(map[string]interface{})["path"] = strings.Replace(info.Name(), ".json", "", -1)
+		if files[i].(map[string]interface{})["date"] == nil {
+			t := time.Now()
+			year, month, day := t.Date()
+			files[i].(map[string]interface{})["date"] = fmt.Sprintf("%v %v %v", day, months[month], year)
+		}
 
 		outputJSON, err := json.Marshal(files[i])
 		if err != nil {
