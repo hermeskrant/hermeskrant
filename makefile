@@ -6,7 +6,6 @@ install:
 	go get -u -v gitlab.com/antipy/antibuild
 	go install -v gitlab.com/antipy/antibuild
 	go build -o articlecompiler
-	make semantic
 
 build: 
 	make clean
@@ -20,7 +19,7 @@ refresh:
 clean:
 	rm -rf public
 
-netlify_build: install
+netlify_build: install semantic-netlify
 	make clean
 	./articlecompiler
 	$(GOPATH)/bin/$(binary) $(templateargs)
