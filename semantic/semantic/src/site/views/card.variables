@@ -5,10 +5,3 @@
 @contentBackground: @pastelorange;
 @background: @pastelorange;
 @solidBorderColor: @orange;
-
-@margin: (4 / 1.75) * 1em 0em;
-
-@rowSpacing: 4em;
-
-@horizontalSpacing: (4 / 1.75) * 1em;
-
