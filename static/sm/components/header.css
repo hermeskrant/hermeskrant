@@ -407,13 +407,13 @@ a.ui.inverted.yellow.header:hover {
 /*--- Green ---*/
 
 .ui.green.header {
-  color: #016936 !important;
+  color: #00cc00 !important;
 }
 a.ui.green.header:hover {
-  color: #005129 !important;
+  color: #00b300 !important;
 }
 .ui.green.dividing.header {
-  border-bottom: 2px solid #016936;
+  border-bottom: 2px solid #00cc00;
 }
 
 /* Inverted */

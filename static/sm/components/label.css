@@ -654,7 +654,7 @@ a.ui.olive.label:hover {
 
 /* Ribbon */
 .ui.olive.ribbon.label {
-  border-color: #01361c !important;
+  border-color: #009900 !important;
 }
 
 /* Basic */
@@ -674,16 +674,16 @@ a.ui.basic.olive.label:hover {
 
 .ui.green.labels .label,
 .ui.green.label {
-  background-color: #016936 !important;
-  border-color: #016936 !important;
+  background-color: #00cc00 !important;
+  border-color: #00cc00 !important;
   color: #FFFFFF !important;
 }
 
 /* Link */
 .ui.green.labels .label:hover,
 a.ui.green.label:hover {
-  background-color: #005129 !important;
-  border-color: #005129 !important;
+  background-color: #00b300 !important;
+  border-color: #00b300 !important;
   color: #FFFFFF !important;
 }
 
@@ -695,20 +695,20 @@ a.ui.green.label:hover {
 
 /* Ribbon */
 .ui.green.ribbon.label {
-  border-color: #01361c !important;
+  border-color: #009900 !important;
 }
 
 /* Basic */
 .ui.basic.green.label {
   background: none #FFFFFF !important;
-  color: #016936 !important;
-  border-color: #016936 !important;
+  color: #00cc00 !important;
+  border-color: #00cc00 !important;
 }
 .ui.basic.green.labels a.label:hover,
 a.ui.basic.green.label:hover {
   background-color: #FFFFFF !important;
-  color: #005129 !important;
-  border-color: #005129 !important;
+  color: #00b300 !important;
+  border-color: #00b300 !important;
 }
 
 /*--- Teal ---*/

@@ -7,10 +7,10 @@
         <span style="font-weight: 900; font-size: 35pt; line-height: 35pt;">{{.title}}</span>
         <h2>{{.quicktext}}</h2>
         <br>
-        <span class="date">Gepubliceerd op {{.date}}</span>
-        <br><br>
-        <div class="ui stackable two column grid">
-            <div class="twelve wide column">
+		<span class="date">Gepubliceerd op {{.date}}</span>
+		<br><br>
+        <div class="ui stackable four column grid">
+            <div class="eleven wide column">
                 <div class="ui fluid card">
                     <div class="image">
                         <img src="{{.thumbnail}}">
@@ -37,8 +37,10 @@
                 </script>
                 <noscript>Please enable JavaScript to view the comments section.</a></noscript>
             {{end}}
-            </div>
-            <div class="four wide column">
+			</div>
+			<div class="two wide column"></div>
+
+            <div class="three wide column ">
                 <h4 class="ui horizontal divider header">
                     <i class="{{(index $Topics .topic).icon}} icon"></i>&nbsp;&nbsp;<span style="text-transform: uppercase;">MEER OVER {{(index $Topics .topic).name}}</span>
                 </h4>
@@ -54,10 +56,7 @@
                                     <div class="content">
                                         <a class="header">{{.title}}</a>
                                         <div class="meta">
-                                            <span class="date">Gepubliceerd op Maandag, 5 April 2018</span>
-                                        </div>
-                                        <div class="description">
-                                            {{.quicktext}} <a class="not_mobile" href="/articles/{{.path}}"> Lees meer...</a>
+                                            <span class="date"> <i class="clock outline icon"></i>5 April 2018</span>
                                         </div>
                                     </div>
                                 </div>
