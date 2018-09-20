@@ -29,3 +29,7 @@ netlify_build: install
 semantic: $(shell find semantic/semantic/src -type f)
 	cd semantic && \
 		make build
+
+semantic-netlify: $(shell find semantic/semantic/src -type f)
+	cd semantic && \
+		make build-netlify
