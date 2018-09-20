@@ -1,8 +1,8 @@
 init:
-	sudo npm install gulp -g
-	npm install semantic-ui -D
+	npm i gulp -g
+	npm i
 	
-build:
+build: init
 	cd semantic && \
 		gulp build
 

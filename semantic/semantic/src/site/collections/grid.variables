@@ -3,4 +3,8 @@
 *******************************/
 
 @gutterWidth: 4rem;
+<<<<<<< HEAD
 @rowSpacing: 4rem;
+=======
+@rowSpacing: 4rem;
+>>>>>>> 2a7c4bb3cfa17761907443ea68bd7aadad09ee92
