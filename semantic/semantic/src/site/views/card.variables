@@ -7,6 +7,6 @@
 @solidBorderColor: @orange;
 
 @rowSpacing: 2em;
-
 @horizontalSpacing: (2 / 1.75) * 1em;
 
+@margin: @horizontalSpacing @rowSpacing;
