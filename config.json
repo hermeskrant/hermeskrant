@@ -3,7 +3,6 @@
 	"jsonroot": "_data/",
     "outroot": "public/",
     "staticroot": "static/",
-	
     "Sites": [
         {
             "Slug": "/index.html",
