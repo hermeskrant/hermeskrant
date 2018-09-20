@@ -2,10 +2,10 @@
      User Global Variables
 *******************************/
 
-/*@primaryColor   : @green;
-/*@secondaryColor : @blue;
+@primaryColor   : @green;
+@secondaryColor : @blue;
 
-/*@pageBackground : @blue;
+@pageBackground : @blue;
 
 
 @red            : #B03060;

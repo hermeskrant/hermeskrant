@@ -2,5 +2,5 @@
     User Variable Overrides
 *******************************/
 
-/*@background: @primaryColor;
-/*@secondaryBackground: @primaryColor;
+@background: @primaryColor;
+@secondaryBackground: @primaryColor;

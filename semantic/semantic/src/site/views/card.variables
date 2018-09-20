@@ -2,5 +2,6 @@
     User Variable Overrides
 *******************************/
 
-/*@contentBackground: @pink;
-/*@background: @pink;
+@contentBackground: @pink;
+@background: @pink;
+@solidBorderColor: @pink;
