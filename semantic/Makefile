@@ -1,7 +1,7 @@
 init:
 	npm i
 	
-build:
+build: init
 	cd semantic && \
 		gulp build
 
