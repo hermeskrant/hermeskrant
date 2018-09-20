@@ -24,3 +24,7 @@ netlify_build: install
 	./articlecompiler
 	$(GOPATH)/bin/$(binary) $(templateargs)
 	cp -a static/. public/
+
+semantic: $(shell find semantic/semantic/src -type f)
+	cd semantic && \
+		make build
