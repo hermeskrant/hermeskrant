@@ -9,7 +9,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "semantic-ui": "^2.4.0",
-    "gulp": "^3.9.1"
+    "semantic-ui": "^2.4.0"
   }
 }

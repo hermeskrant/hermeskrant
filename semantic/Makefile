@@ -1,4 +1,5 @@
 init:
+	sudo npm i gulp -g
 	npm i
 	
 build: init
