@@ -5,7 +5,7 @@
 @primaryColor   : #ffa711;
 @secondaryColor : #ffd793;
 
-@pageBackground : #ffefd6mhh;
+@pageBackground : #ffefd6;
 
 
 @red            : #B03060;
