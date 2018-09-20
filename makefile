@@ -6,6 +6,7 @@ install:
 	go get -u -v gitlab.com/antipy/antibuild
 	go install -v gitlab.com/antipy/antibuild
 	go build -o articlecompiler
+	make semantic
 
 build: 
 	make clean
