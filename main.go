@@ -9,7 +9,7 @@ import (
 	"time"
 )
 
-const months = []string{
+var months = []string{
 	"januari",
 	"februari",
 	"maart",
