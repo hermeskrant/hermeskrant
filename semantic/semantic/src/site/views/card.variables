@@ -4,4 +4,8 @@
 
 @contentBackground: @pastelorange;
 @background: @pastelorange;
+<<<<<<< HEAD
 @solidBorderColor: @orange;
+=======
+@solidBorderColor: @orange;
+>>>>>>> 2a7c4bb3cfa17761907443ea68bd7aadad09ee92

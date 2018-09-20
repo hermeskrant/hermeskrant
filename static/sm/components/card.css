@@ -44,7 +44,7 @@
   z-index: '';
 }
 .ui.card {
-  margin: 1.71428571em 0em;
+  margin: 1em 0em;
 }
 .ui.cards > .card a,
 .ui.card a {
@@ -65,7 +65,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: -1.5em -0.85714286em;
+  margin: -0.875em -0.5em;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -73,7 +73,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 1.5em 0.85714286em;
+  margin: 0.875em 0.5em;
   float: none;
 }
 
@@ -90,7 +90,7 @@
 
 /* Consecutive Card Groups Preserve Row Spacing */
 .ui.cards ~ .ui.cards {
-  margin-top: 1.5em;
+  margin-top: 0.875em;
 }
 
 /*--------------
