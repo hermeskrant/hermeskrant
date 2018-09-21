@@ -2,35 +2,30 @@
     "Layout": {
         "Name": "HermesKrant",
         "Topics": {
+            "school": {
+                "name": "School",
+                "color": "pink",
+                "icon": "graduation cap"
+            },
             "politics": {
                 "name": "Politiek",
-                "color": "orange",
-                "icon": "balance scale"
+                "color": "green",
+                "icon": "gavel"
             },
-            "lifestyle": {
-                "name": "Lifestyle",
+            "culture": {
+                "name": "Cultuur",
                 "color": "purple",
-                "icon": "hand peace"
-            },
-            "technology": {
-                "name": "Technologie",
-                "color": "teal",
-                "icon": "mobile alternate"
-            },
-            "space": {
-                "name": "Ruimte",
-                "color": "blue",
-                "icon": "rocket"
-            },
-            "art": {
-                "name": "Kunst",
-                "color": "pink",
-                "icon": "paint brush"
+                "icon": "university"
             },
             "entertainment": {
                 "name": "Entertainment",
-                "color": "red",
-                "icon": "play"
+                "color": "yellow",
+                "icon": "gamepad"
+            },
+            "tech": {
+                "name": "Science & Tech",
+                "color": "blue",
+                "icon": "rocket"
             }
         }
     }
