@@ -6,7 +6,7 @@
     "languages": [
         "nl"
     ],
-    "default_language": "nl",
+    "defaultlanguage": "nl",
     "Sites": [
         {
             "Slug": "/index.html",
