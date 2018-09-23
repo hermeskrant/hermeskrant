@@ -3,6 +3,10 @@
 	"jsonroot": "_data/",
     "outroot": "public/",
     "staticroot": "static/",
+    "languages": [
+        "nl"
+    ],
+    "default_language": "nl",
     "Sites": [
         {
             "Slug": "/index.html",
