@@ -22,7 +22,6 @@ netlify_build: install semantic-netlify
 	make clean
 	./articlecompiler
 	$(GOPATH)/bin/$(binary) $(templateargs)
-	cp -a static/. public/
 
 semantic: $(shell find semantic/semantic/src -type f)
 	cd semantic && \
