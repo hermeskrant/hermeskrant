@@ -3,7 +3,7 @@ templateargs = --config config.json
 templaterefresh = $(templateargs) --development --host
 
 install:
-	go get -u -v gitlab.com/antipy/antibuild
+	go get -u -v gitlab.com/antipy/antibuild/cli
 	go build -o articlecompiler
 
 build: 
