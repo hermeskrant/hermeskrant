@@ -5,7 +5,6 @@
 @primaryColor   : @green;
 @secondaryColor : @blue;
 
-@pageBackground : @babyblue;
 
 
 @red            : #B03060;
@@ -15,7 +14,7 @@
 @green          : #00cc00;
 @teal           : #008080;
 @blue           : #0E6EB8;
-@babyblue 		: #89cff0;
+@babyblue 	      : #89cff0;
 @violet         : #EE82EE;
 @purple         : #B413EC;
 @pink           : #FF1493;
