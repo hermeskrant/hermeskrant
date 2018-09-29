@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"io/ioutil"
 	"path/filepath"
-	"strconv"
 	"strings"
 	"time"
 )
@@ -69,13 +68,6 @@ func main() {
 			files[i].(map[string]interface{})["date"] = fmt.Sprintf("%v %v %v", day, months[month-1], year)
 >>>>>>> \sept-28-2018/ stfu I did
 		}
-
-		day, err := strconv.Atoi(t[2])
-		if err != nil {
-			fmt.Println(err.Error())
-		}
-
-		files[i].(map[string]interface{})["date"] = fmt.Sprintf("%v %v %v", day, months[month-1], year)
 
 		outputJSON, err := json.Marshal(files[i])
 		if err != nil {
