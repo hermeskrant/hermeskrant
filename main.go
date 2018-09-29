@@ -77,7 +77,7 @@ func main() {
 		}
 	}
 
-	final["Articles"] = files
+	final["Articles"] = reverse(files)
 
 	output, err := json.Marshal(final)
 	if err != nil {
@@ -88,4 +88,12 @@ func main() {
 	if err != nil {
 		fmt.Println(err.Error())
 	}
+}
+
+func reverse(numbers []interface{}) []interface{} {
+	for i := 0; i < len(numbers)/2; i++ {
+		j := len(numbers) - i - 1
+		numbers[i], numbers[j] = numbers[j], numbers[i]
+	}
+	return numbers
 }
