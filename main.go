@@ -9,7 +9,7 @@ import (
 	"strings"
 )
 
-var months = []string{
+var months = [...]string{
 	"januari",
 	"februari",
 	"maart",
@@ -34,8 +34,11 @@ func main() {
 
 	var files = make([]interface{}, len(infos))
 	var final = make(map[string]interface{}, 1)
+	for i := range infos {
+		info := infos[len(infos)-i-1]
+		fmt.Println(i)
+		fmt.Println(info.Name())
 
-	for i, info := range infos {
 		file, err := ioutil.ReadFile(filepath.Join("_data/articles", info.Name()))
 		if err != nil {
 			fmt.Println(err.Error())
