@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"io/ioutil"
 	"path/filepath"
+	"strconv"
 	"strings"
-	"time"
 )
 
 var months = []string{
@@ -23,6 +23,8 @@ var months = []string{
 	"november",
 	"december",
 }
+
+var timeString = "2006-01-02"
 
 func main() {
 	infos, err := ioutil.ReadDir("_data/articles")
@@ -45,11 +47,24 @@ func main() {
 		}
 
 		files[i].(map[string]interface{})["path"] = strings.Replace(info.Name(), ".json", "", -1)
-		if files[i].(map[string]interface{})["date"] == nil {
-			t := time.Now()
-			year, month, day := t.Date()
-			files[i].(map[string]interface{})["date"] = fmt.Sprintf("%v %v %v", day, months[month], year)
+
+		t := strings.Split(files[i].(map[string]interface{})["path"].(string), "-")
+		year, err := strconv.Atoi(t[0])
+		if err != nil {
+			fmt.Println(err.Error())
 		}
+
+		month, err := strconv.Atoi(t[1])
+		if err != nil {
+			fmt.Println(err.Error())
+		}
+
+		day, err := strconv.Atoi(t[2])
+		if err != nil {
+			fmt.Println(err.Error())
+		}
+
+		files[i].(map[string]interface{})["date"] = fmt.Sprintf("%v %v %v", day, months[month-1], year)
 
 		outputJSON, err := json.Marshal(files[i])
 		if err != nil {
