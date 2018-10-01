@@ -1,3 +1,17 @@
 /*******************************
     User Variable Overrides
 *******************************/
+
+@red              : #DB2828;
+@orange           : #3CB959;
+@yellow           : #FFE044;
+@olive            : #B5CC18;
+@green            : #21BA45;
+@teal             : #00B5AD;
+@blue             : #479DDE;
+@violet           : #6435C9;
+@purple           : #AC5CC8;
+@pink             : #E03997;
+@brown            : #A5673F;
+@grey             : #767676;
+@black            : #1B1C1D;
