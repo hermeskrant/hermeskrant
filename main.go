@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"io/ioutil"
 	"path/filepath"
+	"strconv"
 	"strings"
-	"time"
 )
 
 var months = [...]string{
@@ -50,7 +50,6 @@ func main() {
 		}
 
 		files[i].(map[string]interface{})["path"] = strings.Replace(info.Name(), ".json", "", -1)
-<<<<<<< HEAD
 
 		t := strings.Split(files[i].(map[string]interface{})["path"].(string), "-")
 		year, err := strconv.Atoi(t[0])
@@ -61,13 +60,14 @@ func main() {
 		month, err := strconv.Atoi(t[1])
 		if err != nil {
 			fmt.Println(err.Error())
-=======
-		if files[i].(map[string]interface{})["date"] == nil {
-			t := time.Now()
-			year, month, day := t.Date()
-			files[i].(map[string]interface{})["date"] = fmt.Sprintf("%v %v %v", day, months[month-1], year)
->>>>>>> \sept-28-2018/ stfu I did
 		}
+
+		day, err := strconv.Atoi(t[2])
+		if err != nil {
+			fmt.Println(err.Error())
+		}
+
+		files[i].(map[string]interface{})["date"] = fmt.Sprintf("%v %v %v", day, months[month-1], year)
 
 		outputJSON, err := json.Marshal(files[i])
 		if err != nil {
@@ -80,14 +80,7 @@ func main() {
 		}
 	}
 
-<<<<<<< HEAD
 	final["Articles"] = reverse(files)
-=======
-	for _, thing := range files {
-		fmt.Println(thing)
-	}
-	final["Articles"] = files
->>>>>>> \sept-28-2018/ stfu I did
 
 	output, err := json.Marshal(final)
 	if err != nil {
