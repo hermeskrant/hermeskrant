@@ -2,6 +2,6 @@
     User Variable Overrides
 *******************************/
 
-@contentBackground: #cee0ff;
-@background: #cee0ff;
+@contentBackground: #c9ddff;
+@background: #c9ddff;
 

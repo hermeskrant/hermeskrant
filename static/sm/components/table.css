@@ -17,7 +17,7 @@
 /* Prototype */
 .ui.table {
   width: 100%;
-  background: #ffb2d6;
+  background: #ffe2fa;
   margin: 1em 0em;
   border: 1px solid rgba(34, 36, 38, 0.15);
   -webkit-box-shadow: none;
@@ -55,7 +55,7 @@
 }
 .ui.table thead th {
   cursor: auto;
-  background: #ffb2d6;
+  background: #ffe2fa;
   text-align: inherit;
   color: rgba(0, 0, 0, 0.87);
   padding: 0.92857143em 0.78571429em;

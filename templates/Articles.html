@@ -18,9 +18,11 @@
                 {{range .Articles}}
                     <tr id="{{.path}}">
                         <td class="collapsing">
-                            <img class="ui tiny image" src="{{.thumbnail}}">
-                            <br><a class="ui {{(index $Topics .topic).color}} label"><i class="{{(index $Topics .topic).icon}} icon"></i>&nbsp;{{(index $Topics .topic).name}}</a>
-                        </td>
+							<div class="ui small image">
+								<a class="ui right small corner {{(index $Topics .topic).color}} label"><i class="{{(index $Topics .topic).icon}} icon"></i></a>
+								<img class="ui fluid image" src="{{.thumbnail}}">
+							</div>
+						</td>
                         <td><a class="ui medium header" href="/articles/{{.path}}">{{.title}}</a></td>
                     </tr>
                 {{end}}

@@ -2,5 +2,5 @@
     User Variable Overrides
 *******************************/
 
-@background: #ffb2d6;
-@headerBackground: #ffb2d6;
+@background: #ffe2fa;
+@headerBackground: #ffe2fa;
