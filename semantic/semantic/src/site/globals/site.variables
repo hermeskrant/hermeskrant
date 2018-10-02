@@ -4,3 +4,4 @@
 
 @primaryColor   : @green;
 @secondaryColor : @blue;
+//@pageBackground: #e2edff;

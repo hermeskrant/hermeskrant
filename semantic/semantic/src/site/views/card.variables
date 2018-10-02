@@ -2,6 +2,8 @@
     User Variable Overrides
 *******************************/
 
-@contentBackground: #c9ddff;
-@background: #c9ddff;
+@contentBackground: #e2edff;
+@background: #e2edff;
 
+@shadowDistance: px;
+//@borderWidth: 0px;

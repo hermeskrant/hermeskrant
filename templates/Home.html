@@ -6,18 +6,18 @@
                 <div class="eight wide column">
                     <div class="ui fluid card" onclick="window.open('/articles/{{.path}}', '_self')">
                         <div class="image">
-                            <a class="ui {{(index $Topics .topic).color}} big right ribbon label"><i class="{{(index $Topics .topic).icon}} icon"></i> {{(index $Topics .topic).name}}</a>
                             <img src="{{.thumbnail}}">
-                        </div>
+						</div>
+						<a class="ui {{(index $Topics .topic).color}} large top right attached label"><i class="{{(index $Topics .topic).icon}} icon"></i> {{(index $Topics .topic).name}}</a>
                         <div class="content">
-                            <a class="header" href="/articles/{{.path}}">{{.title}}</a>
+							<a class="header" href="/articles/{{.path}}">{{.title}}</a>
                             <div class="meta">
                                 <span class="date">Gepubliceerd op {{.date}}</span>
                             </div>
                             <div class="description">
                                 {{.quicktext}} <a class="not_mobile" href="/articles/{{.path}}">Lees meer...</a>
                             </div>
-                        </div>
+						</div>
                     </div>
                 </div>
             {{end}}
