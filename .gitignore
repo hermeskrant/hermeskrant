@@ -1,2 +1,4 @@
 public/
-_data/article.json
+_data/articles.json
+
+./articlecompiler

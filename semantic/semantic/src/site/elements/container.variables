@@ -1,0 +1,11 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+
+@largeMonitorMinimumGutter: (@emSize  * 2.2);
+
+@largeMonitorBreakpoint: 1500px;
+
+@mobileMinimumGutter: 1em;
+@mobileGutter: 2em;

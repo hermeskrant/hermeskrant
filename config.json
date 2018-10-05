@@ -3,7 +3,10 @@
 	"jsonroot": "_data/",
     "outroot": "public/",
     "staticroot": "static/",
-	
+    "languages": [
+        "nl"
+    ],
+    "defaultlanguage": "nl",
     "Sites": [
         {
             "Slug": "/index.html",
@@ -18,7 +21,19 @@
             ]
 		},
 		{
-            "Slug": "article/*.html",
+            "Slug": "articles/index.html",
+            "Templates": [
+                "Layout.html",
+                "Articles.html"
+            ],
+            "JSONfiles": [
+                "Layout.json",
+                "Articles.json",
+                "articles.json"
+            ]
+        },
+		{
+            "Slug": "articles/*.html",
             "Templates": [
                 "Layout.html",
                 "Article.html"

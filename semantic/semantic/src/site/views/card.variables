@@ -1,0 +1,7 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+@contentBackground: @pastelorange;
+@background: @pastelorange;
+@solidBorderColor: @orange;

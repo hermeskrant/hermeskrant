@@ -1,0 +1,10 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+@downBorderColor: rgba(0, 0, 0, 0.3);
+@downBackground: @grey;
+@downColor: @textColor;
+@downBoxShadow: none;
+
+@inputBackground: @red;

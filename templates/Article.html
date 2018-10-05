@@ -7,9 +7,9 @@
         <span style="font-weight: 900; font-size: 35pt; line-height: 35pt;">{{.title}}</span>
         <h2>{{.quicktext}}</h2>
         <br>
-        <span class="date">Gepubliceerd op Maandag, 5 April 2018</span>
-        <br><br>
-        <div class="ui stackable two column grid">
+		<span class="date">Gepubliceerd op {{.date}}</span>
+		<br><br>
+        <div class="ui stackable column grid">
             <div class="twelve wide column">
                 <div class="ui fluid card">
                     <div class="image">
@@ -24,8 +24,8 @@
                 <script>
 
                 var disqus_config = function () {
-                    this.page.url = "https://new.hermeskrant.nl/article/" + "{{.Path}}";  // Replace PAGE_URL with your page's canonical URL variable
-                    this.page.identifier = "{{.Path}}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                    this.page.url = "https://new.hermeskrant.nl/articles/" + "{{.path}}";  // Replace PAGE_URL with your page's canonical URL variable
+                    this.page.identifier = "{{.path}}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
                 };
 
                 (function() { // DON'T EDIT BELOW THIS LINE
@@ -37,8 +37,8 @@
                 </script>
                 <noscript>Please enable JavaScript to view the comments section.</a></noscript>
             {{end}}
-            </div>
-            <div class="four wide column">
+			</div>
+            <div class="four wide column ">
                 <h4 class="ui horizontal divider header">
                     <i class="{{(index $Topics .topic).icon}} icon"></i>&nbsp;&nbsp;<span style="text-transform: uppercase;">MEER OVER {{(index $Topics .topic).name}}</span>
                 </h4>
@@ -52,12 +52,9 @@
                                         <img src="{{.thumbnail}}">
                                     </div>
                                     <div class="content">
-                                        <a class="header">{{.title}}</a>
+                                        <a class="header" href="/articles/{{.path}}">{{.title}}</a>
                                         <div class="meta">
-                                            <span class="date">Gepubliceerd op Maandag, 5 April 2018</span>
-                                        </div>
-                                        <div class="description">
-                                            {{.quicktext}} <a class="not_mobile" href="/articles/{{.path}}"> Lees meer...</a>
+                                            <span class="date"> <i class="clock outline icon"></i>{{.date}}</span>
                                         </div>
                                     </div>
                                 </div>
