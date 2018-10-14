@@ -4,7 +4,11 @@
 /* the selected colour */
 @selectedTextColor: #ff8000;
 
+@itemTextColor: #ffc080;
+
 /* hover over an item */
 @secondaryPointingHoverTextColor: #ff8000;
+
+@secondaryPointingActiveBorderColor : #ff8000;
 /* hover over the selected item changes border colour */
-@secondaryPointingActiveHoverBorderColor: #ff8000;
+//@secondaryPointingActiveHoverBorderColor: #ff8000;

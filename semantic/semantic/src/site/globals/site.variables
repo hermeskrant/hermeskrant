@@ -4,4 +4,4 @@
 
 @primaryColor   : @green;
 @secondaryColor : @blue;
-///@pageBackground: #e9f6ff;
+@pageBackground: #ffefde; // rgba(255, 171, 83, 0.19)

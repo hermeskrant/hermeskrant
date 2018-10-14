@@ -2,5 +2,7 @@
     User Variable Overrides
 *******************************/
 
-@background: #ffe2fa;
-@headerBackground: #ffe2fa;
+//@background: #ffe2fa;
+//@headerBackground: #ffe2fa;
+@background: @white;
+@headerBackground: @white;

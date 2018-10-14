@@ -31,7 +31,7 @@
           flex-direction: column;
   width: 290px;
   min-height: 0px;
-  background: #e9f6ff;
+  background: #FFFFFF;
   padding: 0em;
   border: none;
   border-radius: 0.28571429rem;
@@ -148,7 +148,7 @@
           flex-grow: 1;
   border: none;
   border-top: 1px solid rgba(34, 36, 38, 0.1);
-  background: #e9f6ff;
+  background: none;
   margin: 0em;
   padding: 1em 1em;
   -webkit-box-shadow: none;

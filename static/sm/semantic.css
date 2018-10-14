@@ -568,7 +568,7 @@ body {
   padding: 0px;
   overflow-x: hidden;
   min-width: 320px;
-  background: #FFFFFF;
+  background: #ffefde;
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 1.4285em;
@@ -23712,7 +23712,7 @@ ol.ui.horizontal.list li:before,
   background: none;
   padding: 0.92857143em 1.14285714em;
   text-transform: none;
-  color: rgba(0, 0, 0, 0.87);
+  color: #ffc080;
   font-weight: normal;
   -webkit-transition: background 0.1s ease, color 0.1s ease, -webkit-box-shadow 0.1s ease;
   transition: background 0.1s ease, color 0.1s ease, -webkit-box-shadow 0.1s ease;
@@ -24303,7 +24303,7 @@ Floated Menu / Item
   border-right: 1px solid transparent;
   border-top: 2px solid transparent;
   padding: 0.92857143em 1.42857143em;
-  color: rgba(0, 0, 0, 0.87);
+  color: #ffc080;
 }
 
 .ui.tabular.menu .item:before {
@@ -24696,7 +24696,7 @@ Floated Menu / Item
   background-color: transparent;
   -webkit-box-shadow: none;
   box-shadow: none;
-  border-color: #1B1C1D;
+  border-color: #ff8000;
   font-weight: bold;
   color: #ff8000;
 }
@@ -24735,7 +24735,7 @@ Floated Menu / Item
 /* Vertical Active */
 
 .ui.secondary.vertical.pointing.menu .active.item {
-  border-color: #1B1C1D;
+  border-color: #ff8000;
 }
 
 /* Inverted */
@@ -26502,7 +26502,7 @@ Floated Menu / Item
 
 .ui.table {
   width: 100%;
-  background: #ffe2fa;
+  background: #FFFFFF;
   margin: 1em 0em;
   border: 1px solid rgba(34, 36, 38, 0.15);
   -webkit-box-shadow: none;
@@ -26543,7 +26543,7 @@ Floated Menu / Item
 
 .ui.table thead th {
   cursor: auto;
-  background: #ffe2fa;
+  background: #FFFFFF;
   text-align: inherit;
   color: rgba(0, 0, 0, 0.87);
   padding: 0.92857143em 0.78571429em;
@@ -28099,7 +28099,7 @@ Floated Menu / Item
   flex-direction: column;
   width: 290px;
   min-height: 0px;
-  background: #e9f6ff;
+  background: #FFFFFF;
   padding: 0em;
   border: none;
   border-radius: 0.28571429rem;
@@ -28227,7 +28227,7 @@ Floated Menu / Item
   flex-grow: 1;
   border: none;
   border-top: 1px solid rgba(34, 36, 38, 0.1);
-  background: #e9f6ff;
+  background: none;
   margin: 0em;
   padding: 1em 1em;
   -webkit-box-shadow: none;
@@ -37251,7 +37251,7 @@ body.pushable {
 }
 
 body.pushable > .pusher {
-  background: #FFFFFF;
+  background: #ffefde;
 }
 
 /* Pusher should inherit background from context */
