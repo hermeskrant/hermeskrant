@@ -8,4 +8,4 @@
 @largeMonitorBreakpoint: 1500px;
 
 @mobileMinimumGutter: 1em;
-@mobileGutter: 2em;
+@mobileGutter: 1em;

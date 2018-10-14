@@ -1842,7 +1842,7 @@
     margin: 0em 0em !important;
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
-    padding: 2rem 2rem !important;
+    padding: 1rem 1rem !important;
   }
   .ui.stackable.grid:not(.vertically) > .row {
     margin: 0em;

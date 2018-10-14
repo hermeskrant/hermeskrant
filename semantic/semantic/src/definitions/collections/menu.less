@@ -1293,6 +1293,11 @@ Floated Menu / Item
   border-color: @blue !important;
   color: @blue !important;
 }
+.ui.menu .white.active.item,
+.ui.white.menu .active.item {
+  border-color: @white !important;
+  color: @white !important;
+}
 .ui.menu .violet.active.item,
 .ui.violet.menu .active.item {
   border-color: @violet !important;
@@ -1519,6 +1524,20 @@ Floated Menu / Item
 .ui.inverted.blue.menu .active.item {
   background-color: @invertedColoredActiveBackground !important;
 }
+
+
+/* White */
+.ui.inverted.menu .white.active.item,
+.ui.inverted.white.menu {
+  background-color: @white;
+}
+.ui.inverted.white.menu .item:before {
+  background-color: @invertedColoredDividerBackground;
+}
+.ui.inverted.white.menu .active.item {
+  background-color: @invertedColoredActiveBackground !important;
+}
+
 
 /* Violet */
 .ui.inverted.menu .violet.active.item,

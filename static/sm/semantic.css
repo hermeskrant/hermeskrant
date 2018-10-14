@@ -5146,8 +5146,8 @@ body .ui.inverted::-webkit-scrollbar-thumb:hover {
 @media only screen and (max-width: 767px) {
   .ui.container {
     width: auto !important;
-    margin-left: 2em !important;
-    margin-right: 2em !important;
+    margin-left: 1em !important;
+    margin-right: 1em !important;
   }
 
   .ui.grid.container {
@@ -23404,7 +23404,7 @@ ol.ui.horizontal.list li:before,
     margin: 0em 0em !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
-    padding: 2rem 2rem !important;
+    padding: 1rem 1rem !important;
   }
 
   .ui.stackable.grid:not(.vertically) > .row {
@@ -25107,6 +25107,12 @@ Floated Menu / Item
   color: #2185D0 !important;
 }
 
+.ui.menu .white.active.item,
+.ui.white.menu .active.item {
+  border-color: #FFFFFF !important;
+  color: #FFFFFF !important;
+}
+
 .ui.menu .violet.active.item,
 .ui.violet.menu .active.item {
   border-color: #6435C9 !important;
@@ -25372,6 +25378,21 @@ Floated Menu / Item
 }
 
 .ui.inverted.blue.menu .active.item {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* White */
+
+.ui.inverted.menu .white.active.item,
+.ui.inverted.white.menu {
+  background-color: #FFFFFF;
+}
+
+.ui.inverted.white.menu .item:before {
+  background-color: rgba(34, 36, 38, 0.1);
+}
+
+.ui.inverted.white.menu .active.item {
   background-color: rgba(0, 0, 0, 0.1) !important;
 }
 
