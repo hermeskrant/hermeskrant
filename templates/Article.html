@@ -6,8 +6,7 @@
         <br>
         <span style="font-weight: 900; font-size: 35pt; line-height: 35pt;">{{.title}}</span>
         <h2>{{.quicktext}}</h2>
-        <br>
-		<span class="date">Gepubliceerd op {{.date}}</span>
+		<span>Geschreven door: {{.writer}}</span> | <span class="date">Gepubliceerd op {{.date}}</span>
 		<br><br>
         <div class="ui stackable column grid">
             <div class="twelve wide column">
@@ -18,6 +17,9 @@
                     <div class="content">
                         {{mdprocess .body}}
                     </div>
+					<div class="extra content">
+						
+					</div>
                 </div>
             {{if .comments}}
                 <div id="disqus_thread"></div>
