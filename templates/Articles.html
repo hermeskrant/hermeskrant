@@ -1,7 +1,7 @@
 {{define "page"}}
     {{$Topics := .Layout.Topics}}
-    <div class="ui container">                
-		<table class="ui celled unstackable striped table"style="word-break: break-word;">
+    <div class="ui container" >                
+		<table class="ui celled unstackable striped table"style="word-break: break-word;table-layout: fixed;">
 				<thead>
                 <tr>
                     <th colspan="2">
@@ -17,13 +17,18 @@
             <tbody>
                 {{range .Articles}}
                     <tr id="{{.path}}">
-                        <td class="collapsing">
+                        <td style="display:flex">
 							<div class="ui small image">
 								<a class="ui right tiny corner {{(index $Topics .topic).color}} label"><i class="{{(index $Topics .topic).icon}} icon"></i></a>
 								<img class="ui fluid image" src="{{.thumbnail}}">
 							</div>
 						</td>
-                        <td><a class="ui medium header" href="/articles/{{.path}}">{{.title}}</a></td>
+                        <td>
+							<a class="ui medium header" href="/articles/{{.path}}">
+							{{.title}}
+							</a>
+							<p class="mobile hidden">{{.quicktext}}</p>
+						</td>
                     </tr>
                 {{end}}
             </tbody>
