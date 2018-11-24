@@ -55,5 +55,9 @@ collections:
       - label: "Body"
         name: "body"
         widget: "markdown"
+      - label: "Writer"
+        name: "writer"
+        widget: "text"
+        required: true
     editor:
       preview: false
