@@ -26,6 +26,8 @@ var months = []string{
 
 var timeString = "2006-01-02"
 
+const ArticlesOutput = "_data/articles.json"
+
 func main() {
 	infos, err := ioutil.ReadDir("_data/articles")
 	if err != nil {
@@ -84,7 +86,7 @@ func main() {
 		fmt.Println(err.Error())
 	}
 
-	err = ioutil.WriteFile("_data/articles.json", output, 0644)
+	err = ioutil.WriteFile(ArticlesOutput, output, 0644)
 	if err != nil {
 		fmt.Println(err.Error())
 	}
