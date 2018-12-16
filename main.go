@@ -26,10 +26,12 @@ var months = []string{
 
 var timeString = "2006-01-02"
 
-const ArticlesOutput = "_data/articles.json"
+const dataFolder = "_data"
+const articlesfolder = dataFolder + "/articles"
+const articlespagedata = dataFolder + "/articles.json"
 
 func main() {
-	infos, err := ioutil.ReadDir("_data/articles")
+	infos, err := ioutil.ReadDir(articlesfolder)
 	if err != nil {
 		fmt.Println(err.Error())
 	}
@@ -38,7 +40,7 @@ func main() {
 	var final = make(map[string]interface{}, 1)
 
 	for i, info := range infos {
-		file, err := ioutil.ReadFile(filepath.Join("_data/articles", info.Name()))
+		file, err := ioutil.ReadFile(filepath.Join(articlesfolder, info.Name()))
 		if err != nil {
 			fmt.Println(err.Error())
 		}
@@ -73,7 +75,7 @@ func main() {
 			fmt.Println(err.Error())
 		}
 
-		err = ioutil.WriteFile("_data/articles/"+info.Name(), outputJSON, 0644)
+		err = ioutil.WriteFile(articlesfolder+info.Name(), outputJSON, 0644)
 		if err != nil {
 			fmt.Println(err.Error())
 		}
@@ -86,7 +88,7 @@ func main() {
 		fmt.Println(err.Error())
 	}
 
-	err = ioutil.WriteFile(ArticlesOutput, output, 0644)
+	err = ioutil.WriteFile(articlespagedata, output, 0644)
 	if err != nil {
 		fmt.Println(err.Error())
 	}
