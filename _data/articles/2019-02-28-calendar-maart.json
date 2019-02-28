@@ -1,0 +1,8 @@
+{
+  "title": "calendar maart",
+  "quicktext": "Wil jij weten wat er allemaal in maart gebbeurt? dit is de plek waar allles bij elkaar staat.",
+  "topic": "school",
+  "comments": true,
+  "body": "<table class=\"ui celled table\">\n  <thead>\n    <tr>\n      <th>maandag</th>\n      <th>dinsdag</th>\n      <th>woensdag</th>\n      <th>donderdag</th>\n      <th>vrijdag</th>\n      <th>zaterdag</th>\n      <th>zondag</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td class=\"active\">25</td>\n      <td class=\"active\">26</td>\n      <td class=\"active\">27</td>\n      <td class=\"active\">28</td>\n      <td >1</td>\n      <td >2</td>\n      <td >3</td>\n    </tr>\n    <tr>\n      <td >4</td>\n      <td >5</td>\n      <td >6</td>\n      <td >7</td>\n      <td >8</td>\n      <td >9</td>\n      <td >10</td>\n    </tr>\n  </tbody>\n</table>",
+  "writer": "Jaap Aarts"
+}
